@@ -7,4 +7,6 @@ import org.springframework.stereotype.Repository;
 
 @RepositoryRestResource
 public interface AuthorRepository extends CrudRepository<Author, Long> {
+
+    //
 }
