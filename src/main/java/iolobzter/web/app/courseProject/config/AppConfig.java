@@ -21,7 +21,7 @@ public class AppConfig {
 
     @Bean
     public UserDetailsService userDetailsService() {
-        return username -> userRepository.findByUsername(username).orElseThrow();
+        return email -> userRepository.findByEmail(email).orElseThrow();
     }
 
 
